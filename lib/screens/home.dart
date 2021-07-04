@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/app/controllers/controllers.dart';
 import 'package:getx_tutorial/screens/screens.dart';
 
 class Home extends StatelessWidget {
@@ -7,6 +8,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final CounterController counterController = Get.put(CounterController());
     return Container(
       child: Center(
         child: ElevatedButton(
